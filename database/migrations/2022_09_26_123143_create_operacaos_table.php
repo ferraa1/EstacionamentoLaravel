@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('operacaos', function (Blueprint $table) {
             $table->id();
             $table->dateTime('data_entrada', $precision = 0);
-            $table->dateTime('data_saida', $precision = 0);
+            $table->dateTime('data_saida', $precision = 0)->nullable();
             $table->timestamps();
             $table->unsignedBigInteger('funcionario_id');
             $table->foreign('funcionario_id')->references('id')->on('funcionarios');

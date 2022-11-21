@@ -14,7 +14,16 @@ class VeiculoController extends Controller
      */
     public function index()
     {
-        //
+        if (!isset($_SESSION))
+            session_start();
+        $dados = array();
+        if (request('find') != null) {
+            $busca = request('find');
+            $dados = Veiculo::where('placa', 'like', "$busca%")->get();
+        } else
+            $dados = Veiculo::all();
+
+        return view("veiculo.index", ['dados' => $dados]);
     }
 
     /**
@@ -24,7 +33,7 @@ class VeiculoController extends Controller
      */
     public function create()
     {
-        //
+        return view('veiculo.create');
     }
 
     /**
@@ -35,7 +44,8 @@ class VeiculoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Veiculo::create($request->all());
+        return redirect()->route('veiculo.index');
     }
 
     /**
@@ -46,7 +56,7 @@ class VeiculoController extends Controller
      */
     public function show(Veiculo $veiculo)
     {
-        //
+        
     }
 
     /**
@@ -55,9 +65,10 @@ class VeiculoController extends Controller
      * @param  \App\Models\Veiculo  $veiculo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Veiculo $veiculo)
+    public function edit($id)
     {
-        //
+        $dados = Veiculo::find($id);
+        return view("veiculo.edit", ['dados' => $dados]);
     }
 
     /**
@@ -67,9 +78,10 @@ class VeiculoController extends Controller
      * @param  \App\Models\Veiculo  $veiculo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Veiculo $veiculo)
+    public function update(Request $request, $id)
     {
-        //
+        Veiculo::find($id)->update($request->all());
+        return redirect()->route('veiculo.index');
     }
 
     /**
@@ -78,8 +90,9 @@ class VeiculoController extends Controller
      * @param  \App\Models\Veiculo  $veiculo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Veiculo $veiculo)
+    public function destroy($id)
     {
-        //
+        Veiculo::destroy($id);
+        return redirect()->route('veiculo.index');
     }
 }

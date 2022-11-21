@@ -1,15 +1,15 @@
-@extends('vaga.layout')
+@extends('veiculo.layout')
 
-@section('titulo','Editar Vaga')
+@section('titulo','Editar Veiculo')
 
 @section('conteudo')
-<form action="{{ route('vaga.update',$dados['id']) }}" method="post">
+<form action="{{ route('veiculo.update',$dados['id']) }}" method="post">
     <fieldset>
-        <legend>Editar Vaga</legend>
+        <legend>Editar Veiculo</legend>
         @method("PATCH")
         @csrf
 
-        @include('vaga.form')
+        @include('veiculo.form')
     </fieldset>
 </form>
 @endsection

@@ -3,13 +3,13 @@
 @section('titulo','Editar Cliente')
 
 @section('conteudo')
-<form action="{{ route('cliente.update',$dados['id']) }}" method="post">
+<form action="{{ route('cliente.update', $id) }}" method="post">
     <fieldset>
         <legend>Editar Cliente</legend>
         @method("PATCH")
         @csrf
 
-        @include('cliente.form')
+        @include('cliente.formvei')
     </fieldset>
 </form>
 @endsection

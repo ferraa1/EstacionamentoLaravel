@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Endereco;
 use Illuminate\Http\Request;
+use App\Models\Cidade;
+use App\Models\Estado;
 
 class EnderecoController extends Controller
 {
@@ -14,7 +16,17 @@ class EnderecoController extends Controller
      */
     public function index()
     {
-        //
+        if (!isset($_SESSION))
+            session_start();
+        $dados = array();
+        if (request('find') != null) {
+            $busca = request('find');
+            $dados = Endereco::where('endereco', 'like', "$busca%")->get();
+        } else
+            $dados = Endereco::all();
+        $cidades = Cidade::all();
+        $estados = Estado::all();
+        return view("endereco.index", ['dados' => $dados, 'cidades' => $cidades, 'estados' => $estados]);
     }
 
     /**
@@ -24,7 +36,9 @@ class EnderecoController extends Controller
      */
     public function create()
     {
-        //
+        $cidades = Cidade::all();
+        $estados = Estado::all();
+        return view('endereco.create', ['cidades' => $cidades, 'estados' => $estados]);
     }
 
     /**
@@ -35,7 +49,8 @@ class EnderecoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Endereco::create($request->all());
+        return redirect()->route('endereco.index');
     }
 
     /**
@@ -55,9 +70,12 @@ class EnderecoController extends Controller
      * @param  \App\Models\Endereco  $endereco
      * @return \Illuminate\Http\Response
      */
-    public function edit(Endereco $endereco)
+    public function edit($id)
     {
-        //
+        $dados = Endereco::find($id);
+        $cidades = Cidade::all();
+        $estados = Estado::all();
+        return view("endereco.edit", ['dados' => $dados, 'cidades' => $cidades, 'estados' => $estados]);
     }
 
     /**
@@ -67,9 +85,10 @@ class EnderecoController extends Controller
      * @param  \App\Models\Endereco  $endereco
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Endereco $endereco)
+    public function update(Request $request, $id)
     {
-        //
+        Endereco::find($id)->update($request->all());
+        return redirect()->route('endereco.index');
     }
 
     /**
@@ -78,8 +97,9 @@ class EnderecoController extends Controller
      * @param  \App\Models\Endereco  $endereco
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Endereco $endereco)
+    public function destroy($id)
     {
-        //
+        Endereco::destroy($id);
+        return redirect()->route('endereco.index');
     }
 }

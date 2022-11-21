@@ -25,4 +25,17 @@ class Operacao extends Model
     public function veiculo() {
         return $this->belongsTo('App\Models\Veiculo');
     }
+
+    /*
+    public function sair($id) {
+        $operacao = Operacao::find($id);
+        $operacao->update(['data_saida' => date('Y-m-d H:i:s')]);
+        //$stmt = $pdo->prepare('UPDATE operacao SET data_saida = :dataSaida WHERE id = :id');
+        //$stmt->bindParam(':dataSaida', $dataSaida, PDO::PARAM_STR);
+        //$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        //$dataSaida = date('Y-m-d H:i:s');
+        //$stmt->execute();
+        header("location:../index.php?selectedClass=operacao");
+    }
+    */
 }

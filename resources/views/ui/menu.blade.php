@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <?php echo var_dump($_SESSION); ?>
+    <?php //echo var_dump($_SESSION); ?>
     <div class="container text-center my-5 p-5 rounded shadow-lg">
         <h1>Menu</h1>
         <h2>Olá, <?=$_SESSION['nome']?>.</h2>
@@ -32,7 +32,6 @@
                 <a class="btn btn-primary" href="{{ route('funcionario.index') }}">Funcionários</a>
                 <a class="btn btn-primary" href="{{ route('cliente.index') }}">Clientes</a>
                 <a class="btn btn-primary" href="{{ route('veiculo.index') }}">Veículos</a>
-                <a class="btn btn-primary" href="{{ route('endereco.index') }}">Endereços</a>
             <?php } ?>
             <a class="btn btn-primary" href="{{ route('operacao.index') }}">Operações</a>
             <form id="form_delete" name="form_delete" action="{{ route('ui.destroy',$_SESSION['id']) }}" method="post" onsubmit="return confirm('Tem certeza que deseja sair?')">

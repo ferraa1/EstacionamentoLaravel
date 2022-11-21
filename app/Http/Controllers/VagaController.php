@@ -93,6 +93,7 @@ class VagaController extends Controller
     public function destroy($id)
     {
         Vaga::destroy($id);
+        //var_dump($_POST);
         return redirect()->route('vaga.index');
     }
 }

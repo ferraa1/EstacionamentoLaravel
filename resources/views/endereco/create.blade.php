@@ -1,15 +1,15 @@
-@extends('vaga.layout')
+@extends('endereco.layout')
 
-@section('titulo','Vaga')
+@section('titulo','Endereco')
 
 @section('conteudo')
-<form action="{{ route('vaga.store')}}" method="post">
+<form action="{{ route('endereco.store')}}" method="post">
     <fieldset>
-        <legend>Cadastrar Vaga</legend>
+        <legend>Cadastrar Endereco</legend>
         @method("POST")
         @csrf
 
-        @include('vaga.form')
+        @include('endereco.form')
     </fieldset>
 </form>
 @endsection

@@ -1,14 +1,14 @@
-@extends('vaga.layout')
+@extends('veiculo.layout')
 
-@section('titulo','Vaga')
+@section('titulo','Veiculo')
 
 @section('conteudo')
 
-<form action="{{ route('vaga.index') }}" method="get">
+<form action="{{ route('veiculo.index') }}" method="get">
   <fieldset>
-    <legend>Consultar Vagas</legend>
+    <legend>Consultar Veiculos</legend>
     @method('GET')
-    <label for="find">Número</label>
+    <label for="find">Placa</label>
     <br>
     <input type="text" name="find" id="find">
     <br>
@@ -21,7 +21,7 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">NÚMERO</th>
+      <th scope="col">PLACA</th>
 
       <th scope="col">EDITAR</th>
       <th scope="col">EXCLUIR</th>
@@ -31,11 +31,11 @@
   @foreach ($dados as $item)
   <tr>
     <th scope="row">{{ $item->id }}</th>
-    <td>{{ $item->numero }}</td>
+    <td>{{ $item->placa }}</td>
 
-    <td><a href="{{ route('vaga.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
+    <td><a href="{{ route('veiculo.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
     <td>
-      <form id="form_delete" name="form_delete" action="{{ route('vaga.destroy',$item->id) }}" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este registro?')">
+      <form id="form_delete" name="form_delete" action="{{ route('veiculo.destroy',$item->id) }}" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este registro?')">
         @method('DELETE')
         @csrf
         <button class="btn btn-sm btn-secondary" type="submit">Excluir</button>
