@@ -64,7 +64,7 @@
 <label for="veiculoscb[]">Veículos</label>
 <br>
 @foreach ($veiculos as $veiculo)
-<input type='checkbox' name='veiculoscb[{{ $veiculo->id }}]' value='{{ $veiculo->id }}'>{{ $veiculo->placa }}<br>
+<input type='checkbox' name='veiculoscb[{{ $veiculo->id }}]' value='{{ $veiculo->id }}' id='{{ $veiculo->placa }}'>{{ $veiculo->placa }}<br>
 @endforeach
 <br>
 <input required=true type="checkbox" id="concordar" name="concordar" value="Concordo">

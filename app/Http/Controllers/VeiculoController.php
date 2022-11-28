@@ -24,9 +24,9 @@ class VeiculoController extends Controller
         //    $dados = Veiculo::all();
         //}
         //return view("veiculo.index", ['dados' => $dados]);
-        $filtro = request()->input('find');
+        $filtro = request()->input('filtro');
         $dados = Veiculo::where('placa','LIKE',$filtro.'%')->orderBy('placa')->paginate(5);
-        return view('veiculo/index')->with('dados',$dados);
+        return view('veiculo/index')->with('dados',$dados)->with('filtro',$filtro);
     }
 
     /**

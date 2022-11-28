@@ -25,9 +25,9 @@ class VagaController extends Controller
         //}
         //Vaga::paginate(5);
         //return view("vaga.index", ['dados' => $dados]);
-        $filtro = request()->input('find');
+        $filtro = request()->input('filtro');
         $dados = Vaga::where('numero','LIKE',$filtro.'%')->orderBy('numero')->paginate(5);
-        return view('vaga/index')->with('dados',$dados);//->with('filtro',$filtro);
+        return view('vaga/index')->with('dados',$dados)->with('filtro',$filtro);
     }
 
     /**

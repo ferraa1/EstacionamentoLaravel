@@ -32,9 +32,9 @@ class OperacaoController extends Controller
         $funcionarios = Funcionario::all();
         $preco_horas = Preco_hora::all();
         //return view("operacao.index", ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos, 'funcionarios' => $funcionarios, 'preco_horas' => $preco_horas]);
-        $filtro = request()->input('find');
+        $filtro = request()->input('filtro');
         $dados = Operacao::where('data_entrada','LIKE',$filtro.'%')->orderBy('data_entrada')->paginate(5);
-        return view('operacao/index')->with('dados',$dados)->with('vagas',$vagas)->with('veiculos',$veiculos)->with('funcionarios',$funcionarios)->with('preco_horas',$preco_horas);
+        return view('operacao/index')->with('dados',$dados)->with('vagas',$vagas)->with('veiculos',$veiculos)->with('funcionarios',$funcionarios)->with('preco_horas',$preco_horas)->with('filtro',$filtro);
     }
 
     /**

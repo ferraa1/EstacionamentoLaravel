@@ -24,9 +24,9 @@ class PrecoHoraController extends Controller
         //    $dados = Preco_hora::all();
         //}
         //return view("preco_hora.index", ['dados' => $dados]);
-        $filtro = request()->input('find');
-        $dados = Preco_hora::where('preco','LIKE',$filtro.'%')->orderBy('preco')->paginate(5);
-        return view('preco_hora/index')->with('dados',$dados);
+        $filtro = request()->input('filtro');
+        $dados = Preco_hora::where('preco','LIKE',$filtro.'%')->orderBy('id', 'desc')->paginate(5);
+        return view('preco_hora/index')->with('dados',$dados)->with('filtro',$filtro);
     }
 
     /**

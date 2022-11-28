@@ -8,9 +8,9 @@
   <fieldset>
     <legend>Consultar Operacoes</legend>
     @method('GET')
-    <label for="find">Data de Entrada</label>
+    <label for="filtro">Data de Entrada</label>
     <br>
-    <input type="text" name="find" id="find">
+    <input type="text" name="filtro" id="filtro">
     <br>
     <br>
     <button class="btn btn-primary" type="submit">Consultar</button>
@@ -84,7 +84,7 @@
           $horas = ($dataSaida - $entrada) / 3600;
           $total = $horas * $preco_hora;
           $totalFormat = number_format($total,2,',','.');
-          echo "R$$totalFormat";
+          echo "R$ $totalFormat";
         } else {
           echo "";
         }
@@ -111,7 +111,5 @@
   @endforeach
   </tbody>
 </table>
-<div class="card-footer">
-  {{ $dados->links() }}
-</div>
+{{ $dados->appends(array('filtro' => $filtro))->links() }}
 @endsection

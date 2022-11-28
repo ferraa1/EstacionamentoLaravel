@@ -1,0 +1,602 @@
+1669610708083	geckodriver	INFO	Listening on 127.0.0.1:63405
+1669610711161	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "63406" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileShnH6T"
+1669610713381	Marionette	INFO	Marionette enabled
+1669610713415	Marionette	INFO	Listening on port 63416
+Read port: 63416
+WebDriver BiDi listening on ws://127.0.0.1:63406
+1669610714925	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileShnH6T\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63406/devtools/browser/3eeb826d-c4ae-40b6-b67a-4466662c45e3
+1669610751490	Marionette	INFO	Stopped listening on port 63416
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 1080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+1669611703900	geckodriver	INFO	Listening on 127.0.0.1:63684
+1669611706923	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "63685" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileMrvsid"
+1669611708690	Marionette	INFO	Marionette enabled
+1669611708718	Marionette	INFO	Listening on port 63695
+Read port: 63695
+WebDriver BiDi listening on ws://127.0.0.1:63685
+1669611709342	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileMrvsid\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63685/devtools/browser/1e3511c8-cfdf-421c-8a14-da35b28c2438
+1669611720744	Marionette	INFO	Stopped listening on port 63695
+1669613332943	geckodriver	INFO	Listening on 127.0.0.1:64174
+1669613335933	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64175" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile8QTCUZ"
+1669613338226	Marionette	INFO	Marionette enabled
+1669613338260	Marionette	INFO	Listening on port 64186
+Read port: 64186
+WebDriver BiDi listening on ws://127.0.0.1:64175
+1669613338827	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile8QTCUZ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64175/devtools/browser/8873341d-b649-437b-abac-60084cc48c96
+1669613376868	Marionette	INFO	Stopped listening on port 64186
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669613591733	geckodriver	INFO	Listening on 127.0.0.1:64315
+1669613594702	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64316" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileBQipvO"
+1669613596092	Marionette	INFO	Marionette enabled
+1669613596119	Marionette	INFO	Listening on port 64326
+Read port: 64326
+WebDriver BiDi listening on ws://127.0.0.1:64316
+1669613596638	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileBQipvO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64316/devtools/browser/f31653d7-816e-4e3a-be8d-ac04161a2b1a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669613856773	Marionette	INFO	Stopped listening on port 64326
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 28040, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559
+[Parent 28040, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+4387
+WebDriver BiDi listening on ws://127.0.0.1:64378
+1669613652273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile1Ls84l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64378/devtools/browser/6ee36c86-efec-4a67-b153-41ea742a0555
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669613859694	Marionette	INFO	Stopped listening on port 64387
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669613873059	geckodriver	INFO	Listening on 127.0.0.1:64538
+1669613875969	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64539" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile1Sxsao"
+1669613878215	Marionette	INFO	Marionette enabled
+1669613878249	Marionette	INFO	Listening on port 64549
+Read port: 64549
+WebDriver BiDi listening on ws://127.0.0.1:64539
+1669613878907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile1Sxsao\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64539/devtools/browser/f3a4c5f8-a089-434f-8fa8-29cd338d7deb
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669613898605	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669613898956	Marionette	INFO	Stopped listening on port 64549
+1669614396375	geckodriver	INFO	Listening on 127.0.0.1:64796
+1669614399414	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64797" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileM4J6wz"
+1669614400994	Marionette	INFO	Marionette enabled
+1669614401024	Marionette	INFO	Listening on port 64807
+Read port: 64807
+WebDriver BiDi listening on ws://127.0.0.1:64797
+1669614401559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileM4J6wz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64797/devtools/browser/eb048e4c-dd1d-4d1f-95f5-993284e588b6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669614431768	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669614432488	Marionette	INFO	Stopped listening on port 64807
+1669614866266	geckodriver	INFO	Listening on 127.0.0.1:65011
+1669614869244	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65012" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileU3Rj7o"
+1669614870762	Marionette	INFO	Marionette enabled
+1669614870790	Marionette	INFO	Listening on port 65022
+Read port: 65022
+WebDriver BiDi listening on ws://127.0.0.1:65012
+1669614871248	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileU3Rj7o\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65012/devtools/browser/6059cce2-1b24-470d-866d-f7a4fb342d35
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669614923884	Marionette	INFO	Stopped listening on port 65022
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 29532, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559
+1669615392877	geckodriver	INFO	Listening on 127.0.0.1:65225
+1669615395912	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65226" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJz9qzn"
+1669615397639	Marionette	INFO	Marionette enabled
+1669615397660	Marionette	INFO	Listening on port 65235
+Read port: 65235
+WebDriver BiDi listening on ws://127.0.0.1:65226
+1669615398125	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJz9qzn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65226/devtools/browser/2dc9b115-1237-46f0-afc7-fb3cc0845a0c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669615429490	Marionette	INFO	Stopped listening on port 65235
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669615475634	geckodriver	INFO	Listening on 127.0.0.1:65314
+1669615478691	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65315" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileFCcoyf"
+1669615480528	Marionette	INFO	Marionette enabled
+1669615480564	Marionette	INFO	Listening on port 65325
+Read port: 65325
+WebDriver BiDi listening on ws://127.0.0.1:65315
+1669615481181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileFCcoyf\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65315/devtools/browser/c5821865-f34b-4bd9-b9eb-a7b2ed99f196
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669615565270	Marionette	INFO	Stopped listening on port 65325
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 27696, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559
+1669615572336	geckodriver	INFO	Listening on 127.0.0.1:65385
+1669615575385	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65386" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJIl4qU"
+1669615577046	Marionette	INFO	Marionette enabled
+1669615577069	Marionette	INFO	Listening on port 65396
+Read port: 65396
+WebDriver BiDi listening on ws://127.0.0.1:65386
+1669615577656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJIl4qU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65386/devtools/browser/92c3593d-0139-4901-bc37-3c50895ebf90
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669615593160	Marionette	INFO	Stopped listening on port 65396
+1669615623190	geckodriver	INFO	Listening on 127.0.0.1:65445
+1669615626242	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65446" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJvUTVk"
+1669615627892	Marionette	INFO	Marionette enabled
+1669615627921	Marionette	INFO	Listening on port 65456
+Read port: 65456
+WebDriver BiDi listening on ws://127.0.0.1:65446
+1669615628462	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileJvUTVk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65446/devtools/browser/ac0498e3-33be-4e92-b4da-ed6b5391f557
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669615644117	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669615644298	Marionette	INFO	Stopped listening on port 65456
+[Parent 24708, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669615980601	geckodriver	INFO	Listening on 127.0.0.1:49243
+1669615983656	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "49244" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileM8Ctdd"
+1669615985160	Marionette	INFO	Marionette enabled
+1669615985184	Marionette	INFO	Listening on port 49254
+Read port: 49254
+WebDriver BiDi listening on ws://127.0.0.1:49244
+1669615985682	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileM8Ctdd\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49244/devtools/browser/f4f58112-8fbd-4973-b204-9a788ca91dd2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669616023614	Marionette	INFO	Stopped listening on port 49254
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 24864, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+1669616032293	geckodriver	INFO	Listening on 127.0.0.1:49304
+1669616035348	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "49305" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileYZp4Xk"
+1669616037194	Marionette	INFO	Marionette enabled
+1669616037224	Marionette	INFO	Listening on port 49315
+Read port: 49315
+WebDriver BiDi listening on ws://127.0.0.1:49305
+1669616037922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileYZp4Xk\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:49305/devtools/browser/5ed3475c-6efd-44e0-a18f-030f7c79a9aa
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669616057453	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669616057529	Marionette	INFO	Stopped listening on port 49315
+1669622443590	geckodriver	INFO	Listening on 127.0.0.1:51537
+1669622446570	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51538" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileYIErKN"
+1669622448112	Marionette	INFO	Marionette enabled
+1669622448141	Marionette	INFO	Listening on port 51548
+Read port: 51548
+WebDriver BiDi listening on ws://127.0.0.1:51538
+1669622448673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileYIErKN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51538/devtools/browser/26815edf-e545-4b88-94f3-16f7d17b230d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669622506798	Marionette	INFO	Stopped listening on port 51548
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_untrustedmodules_ping
+[Parent 28372, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559
+1669622732276	geckodriver	INFO	Listening on 127.0.0.1:51686
+1669622735205	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51687" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileEXAPoe"
+1669622736622	Marionette	INFO	Marionette enabled
+1669622736644	Marionette	INFO	Listening on port 51697
+Read port: 51697
+WebDriver BiDi listening on ws://127.0.0.1:51687
+1669622737118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileEXAPoe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51687/devtools/browser/076416b7-8465-49dd-9a89-250d82994ba0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669622794261	Marionette	INFO	Stopped listening on port 51697
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669623395265	geckodriver	INFO	Listening on 127.0.0.1:51934
+1669623398442	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51935" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofiletnMdX5"
+1669623400523	Marionette	INFO	Marionette enabled
+1669623400547	Marionette	INFO	Listening on port 51945
+Read port: 51945
+WebDriver BiDi listening on ws://127.0.0.1:51935
+1669623401008	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofiletnMdX5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51935/devtools/browser/b3ab9093-a0a2-4860-9c8d-e8e4c2c8ffb4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 574: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1669623516299	Marionette	INFO	Stopped listening on port 51945
+[Parent 27036, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669623524175	geckodriver	INFO	Listening on 127.0.0.1:52026
+1669623527212	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52027" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileUnWosP"
+1669623528977	Marionette	INFO	Marionette enabled
+1669623529000	Marionette	INFO	Listening on port 52037
+Read port: 52037
+WebDriver BiDi listening on ws://127.0.0.1:52027
+1669623529507	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileUnWosP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52027/devtools/browser/b3d34435-c129-43a3-b44e-023661d37e4b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669623674459	Marionette	INFO	Stopped listening on port 52037
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669623680358	geckodriver	INFO	Listening on 127.0.0.1:52136
+1669623683458	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52137" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile9Z7TSP"
+1669623684924	Marionette	INFO	Marionette enabled
+1669623684946	Marionette	INFO	Listening on port 52147
+Read port: 52147
+WebDriver BiDi listening on ws://127.0.0.1:52137
+1669623685431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile9Z7TSP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52137/devtools/browser/49f11fd0-95ae-4915-b086-0d2079a45a99
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669623767414	Marionette	INFO	Stopped listening on port 52147
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669623881518	geckodriver	INFO	Listening on 127.0.0.1:52263
+1669623884410	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52264" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilecGuYDy"
+1669623886315	Marionette	INFO	Marionette enabled
+1669623886351	Marionette	INFO	Listening on port 52274
+Read port: 52274
+WebDriver BiDi listening on ws://127.0.0.1:52264
+1669623887015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilecGuYDy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52264/devtools/browser/4c16ff83-f326-4b89-925c-2cfab39d2e4f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669623948678	Marionette	INFO	Stopped listening on port 52274
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669623954611	geckodriver	INFO	Listening on 127.0.0.1:52329
+1669623957684	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52330" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileEZ0S34"
+1669623959250	Marionette	INFO	Marionette enabled
+1669623959272	Marionette	INFO	Listening on port 52340
+Read port: 52340
+WebDriver BiDi listening on ws://127.0.0.1:52330
+1669623959763	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileEZ0S34\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52330/devtools/browser/5a6af98b-4fad-4478-bc59-5bd9562ed477
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669634415512	geckodriver	INFO	Listening on 127.0.0.1:50388
+1669634418456	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50389" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileALOmAO"
+1669634419203	Marionette	INFO	Marionette enabled
+1669634419215	Marionette	INFO	Listening on port 50399
+Read port: 50399
+WebDriver BiDi listening on ws://127.0.0.1:50389
+1669634419971	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileALOmAO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50389/devtools/browser/bee70aa2-0389-4b95-a64e-52b6730d6dd1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669634486925	Marionette	INFO	Stopped listening on port 50399
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669634604616	geckodriver	INFO	Listening on 127.0.0.1:50501
+1669634607650	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50502" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilevQVimQ"
+1669634608417	Marionette	INFO	Marionette enabled
+1669634608430	Marionette	INFO	Listening on port 50512
+WebDriver BiDi listening on ws://127.0.0.1:50502
+Read port: 50512
+1669634609302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilevQVimQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50502/devtools/browser/fa24410d-77da-4856-aeae-ff932a041d2e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669634629955	Marionette	INFO	Stopped listening on port 50512
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669634819826	geckodriver	INFO	Listening on 127.0.0.1:62485
+1669634822867	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62486" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileS1b71l"
+1669634823631	Marionette	INFO	Marionette enabled
+1669634823644	Marionette	INFO	Listening on port 62496
+Read port: 62496
+WebDriver BiDi listening on ws://127.0.0.1:62486
+1669634823864	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileS1b71l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62486/devtools/browser/0b15af27-b28f-41f2-8580-e5907a55d668
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669634865799	Marionette	INFO	Stopped listening on port 62496
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669635515138	geckodriver	INFO	Listening on 127.0.0.1:64750
+1669635518049	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64751" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileuMZ4vN"
+1669635519505	Marionette	INFO	Marionette enabled
+1669635519530	Marionette	INFO	Listening on port 64760
+Read port: 64760
+WebDriver BiDi listening on ws://127.0.0.1:64751
+1669635520073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileuMZ4vN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64751/devtools/browser/df32bf62-b1e1-4cf1-b58e-8c465a773801
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669635569270	Marionette	INFO	Stopped listening on port 64760
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669635670988	geckodriver	INFO	Listening on 127.0.0.1:64846
+1669635674021	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilez9wrwP"
+1669635675452	Marionette	INFO	Marionette enabled
+1669635675475	Marionette	INFO	Listening on port 64857
+Read port: 64857
+WebDriver BiDi listening on ws://127.0.0.1:64847
+1669635675990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilez9wrwP\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64847/devtools/browser/d959e85a-d222-46cc-8795-5b87824d3a8a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669635702331	Marionette	INFO	Stopped listening on port 64857
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669635884879	geckodriver	INFO	Listening on 127.0.0.1:64954
+1669635887906	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "64955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile6ERtkw"
+1669635889337	Marionette	INFO	Marionette enabled
+1669635889367	Marionette	INFO	Listening on port 64965
+Read port: 64965
+WebDriver BiDi listening on ws://127.0.0.1:64955
+1669635889834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile6ERtkw\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64955/devtools/browser/2d7d8880-958b-403a-a853-2f0e4e130d1b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669635931925	Marionette	INFO	Stopped listening on port 64965
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669635937334	geckodriver	INFO	Listening on 127.0.0.1:65015
+1669635940334	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "65016" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile1KYFcg"
+1669635941785	Marionette	INFO	Marionette enabled
+1669635941808	Marionette	INFO	Listening on port 65026
+Read port: 65026
+WebDriver BiDi listening on ws://127.0.0.1:65016
+1669635942296	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile1KYFcg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:65016/devtools/browser/cfea70f1-fdc4-4086-9fdd-8c141dfea57d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669636088648	Marionette	INFO	Stopped listening on port 65026
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 26508, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669638188691	geckodriver	INFO	Listening on 127.0.0.1:58930
+1669638191669	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "58931" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilezkyjl8"
+1669638193221	Marionette	INFO	Marionette enabled
+1669638193244	Marionette	INFO	Listening on port 58941
+Read port: 58941
+WebDriver BiDi listening on ws://127.0.0.1:58931
+1669638193740	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilezkyjl8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58931/devtools/browser/d0b13e02-0062-4a9f-ba80-c9d361119bb0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669638222863	Marionette	INFO	Stopped listening on port 58941
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669638649337	geckodriver	INFO	Listening on 127.0.0.1:59139
+1669638652376	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59140" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilezoamrW"
+1669638654027	Marionette	INFO	Marionette enabled
+1669638654058	Marionette	INFO	Listening on port 59150
+Read port: 59150
+WebDriver BiDi listening on ws://127.0.0.1:59140
+1669638654570	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilezoamrW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59140/devtools/browser/9dc5e22c-c2e4-44ec-8ee1-a2db79a80128
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669638678863	Marionette	INFO	Stopped listening on port 59150
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669639158383	geckodriver	INFO	Listening on 127.0.0.1:53668
+1669639161333	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53669" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilebonpkr"
+1669639163152	Marionette	INFO	Marionette enabled
+1669639163177	Marionette	INFO	Listening on port 53679
+Read port: 53679
+WebDriver BiDi listening on ws://127.0.0.1:53669
+1669639163670	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilebonpkr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53669/devtools/browser/89fb3c97-2fe7-4d06-916b-8887fe235b1f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669639230008	Marionette	INFO	Stopped listening on port 53679
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 17056, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:559
+1669639330749	geckodriver	INFO	Listening on 127.0.0.1:53758
+1669639333720	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileDbWQ8l"
+1669639335260	Marionette	INFO	Marionette enabled
+1669639335283	Marionette	INFO	Listening on port 53769
+Read port: 53769
+WebDriver BiDi listening on ws://127.0.0.1:53759
+1669639335757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileDbWQ8l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53759/devtools/browser/21aa7848-10c0-4674-a252-2bdf56f8b6e2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669639358153	Marionette	INFO	Stopped listening on port 53769
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669639714025	geckodriver	INFO	Listening on 127.0.0.1:59926
+1669639716976	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59927" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilexo1KTA"
+1669639718426	Marionette	INFO	Marionette enabled
+1669639718448	Marionette	INFO	Listening on port 59937
+Read port: 59937
+WebDriver BiDi listening on ws://127.0.0.1:59927
+1669639718928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilexo1KTA\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59927/devtools/browser/26dccd11-ed44-4b99-97dc-9b79f964f329
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669639756961	Marionette	INFO	Stopped listening on port 59937
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669639762475	geckodriver	INFO	Listening on 127.0.0.1:59985
+1669639765562	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59986" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileLYla7W"
+1669639767063	Marionette	INFO	Marionette enabled
+1669639767094	Marionette	INFO	Listening on port 59996
+Read port: 59996
+WebDriver BiDi listening on ws://127.0.0.1:59986
+1669639767571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileLYla7W\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59986/devtools/browser/f1364020-f2df-4453-9267-f4172046d790
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669639846191	Marionette	INFO	Stopped listening on port 59996
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669639852301	geckodriver	INFO	Listening on 127.0.0.1:60067
+1669639855328	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "60068" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileVms0fi"
+1669639856819	Marionette	INFO	Marionette enabled
+1669639856845	Marionette	INFO	Listening on port 60078
+Read port: 60078
+WebDriver BiDi listening on ws://127.0.0.1:60068
+1669639857340	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileVms0fi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60068/devtools/browser/d3a7d7b6-49c9-4c55-b72a-89b5f15a18cf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669639886904	Marionette	INFO	Stopped listening on port 60078
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669639910675	geckodriver	INFO	Listening on 127.0.0.1:60129
+1669639913684	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "60130" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileupr8QS"
+1669639915370	Marionette	INFO	Marionette enabled
+1669639915398	Marionette	INFO	Listening on port 60140
+Read port: 60140
+WebDriver BiDi listening on ws://127.0.0.1:60130
+1669639915953	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileupr8QS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60130/devtools/browser/ac9c9d09-cc83-44ec-ba05-e534b5481b7f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669640046693	Marionette	INFO	Stopped listening on port 60140
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669640576389	geckodriver	INFO	Listening on 127.0.0.1:60440
+1669640579421	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "60441" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofiler1dvdl"
+1669640581007	Marionette	INFO	Marionette enabled
+1669640581034	Marionette	INFO	Listening on port 60451
+Read port: 60451
+WebDriver BiDi listening on ws://127.0.0.1:60441
+1669640581500	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofiler1dvdl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60441/devtools/browser/cb701797-742a-4662-ad7b-fec795f4c73f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669640613416	Marionette	INFO	Stopped listening on port 60451
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669643403648	geckodriver	INFO	Listening on 127.0.0.1:61605
+1669643406691	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "61606" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileodiwOF"
+1669643408163	Marionette	INFO	Marionette enabled
+1669643408188	Marionette	INFO	Listening on port 61616
+Read port: 61616
+WebDriver BiDi listening on ws://127.0.0.1:61606
+1669643408954	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileodiwOF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61606/devtools/browser/15347b6c-694e-42ae-8c8f-825b0a9cd84e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669643421641	Marionette	INFO	Stopped listening on port 61616
+1669643530677	geckodriver	INFO	Listening on 127.0.0.1:61687
+1669643533719	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "61688" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilerIYoq5"
+1669643535418	Marionette	INFO	Marionette enabled
+1669643535445	Marionette	INFO	Listening on port 61697
+Read port: 61697
+WebDriver BiDi listening on ws://127.0.0.1:61688
+1669643536270	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilerIYoq5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61688/devtools/browser/c998b97d-8777-42af-a21e-55d59f78110d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1669643647485	Marionette	INFO	Stopped listening on port 61697
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 5108, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1669643763784	geckodriver	INFO	Listening on 127.0.0.1:61808
+1669643766797	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "61809" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileHoNsmp"
+1669643768280	Marionette	INFO	Marionette enabled
+1669643768310	Marionette	INFO	Listening on port 61819
+Read port: 61819
+WebDriver BiDi listening on ws://127.0.0.1:61809
+1669643769054	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileHoNsmp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61809/devtools/browser/739dd562-3b59-44b3-86f9-64db5d4a411e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1669644048365	Marionette	INFO	Stopped listening on port 61819
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669644205558	geckodriver	INFO	Listening on 127.0.0.1:62034
+1669644208582	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62035" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileAnq06f"
+1669644210063	Marionette	INFO	Marionette enabled
+1669644210111	Marionette	INFO	Listening on port 62045
+Read port: 62045
+WebDriver BiDi listening on ws://127.0.0.1:62035
+1669644210819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileAnq06f\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62035/devtools/browser/53dee3d5-3c08-46a9-b4b2-4bbe91cccc88
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669644309069	Marionette	INFO	Stopped listening on port 62045
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669644459384	geckodriver	INFO	Listening on 127.0.0.1:62211
+1669644462418	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62212" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileuoHjzB"
+1669644463875	Marionette	INFO	Marionette enabled
+1669644463900	Marionette	INFO	Listening on port 62222
+Read port: 62222
+WebDriver BiDi listening on ws://127.0.0.1:62212
+1669644464652	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofileuoHjzB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62212/devtools/browser/2cfacb48-8494-4054-a506-e3cea58f39d7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669644670498	Marionette	INFO	Stopped listening on port 62222
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669644765496	geckodriver	INFO	Listening on 127.0.0.1:62390
+1669644768520	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62391" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilexeIiKY"
+1669644769969	Marionette	INFO	Marionette enabled
+1669644769998	Marionette	INFO	Listening on port 62401
+Read port: 62401
+WebDriver BiDi listening on ws://127.0.0.1:62391
+1669644770716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilexeIiKY\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62391/devtools/browser/27c67e6b-1399-4321-b39d-ca353b26bdd8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669644922982	Marionette	INFO	Stopped listening on port 62401
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669644984955	geckodriver	INFO	Listening on 127.0.0.1:62566
+1669644988007	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62567" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilew9unat"
+1669644989487	Marionette	INFO	Marionette enabled
+1669644989515	Marionette	INFO	Listening on port 62577
+Read port: 62577
+WebDriver BiDi listening on ws://127.0.0.1:62567
+1669644990279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofilew9unat\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62567/devtools/browser/fb18faa2-d9db-4cf3-9103-a9d0e5b84fdb
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669645169961	Marionette	INFO	Stopped listening on port 62577
+[Parent 22772, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:746
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669645176777	geckodriver	INFO	Listening on 127.0.0.1:62701
+1669645179835	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62702" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile5YCkzU"
+1669645181343	Marionette	INFO	Marionette enabled
+1669645181368	Marionette	INFO	Listening on port 62712
+Read port: 62712
+WebDriver BiDi listening on ws://127.0.0.1:62702
+1669645182124	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\LEVIAT~1\\AppData\\Local\\Temp\\rust_mozprofile5YCkzU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62702/devtools/browser/f391fe1a-c845-43d6-b852-d37e44e42391
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:8000."
+1669645212352	Marionette	INFO	Stopped listening on port 62712

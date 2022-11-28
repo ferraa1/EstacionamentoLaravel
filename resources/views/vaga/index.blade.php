@@ -8,9 +8,9 @@
   <fieldset>
     <legend>Consultar Vagas</legend>
     @method('GET')
-    <label for="find">Número</label>
+    <label for="filtro">Número</label>
     <br>
-    <input type="text" name="find" id="find">
+    <input type="text" name="filtro" id="filtro">
     <br>
     <br>
     <button class="btn btn-primary" type="submit">Consultar</button>
@@ -45,7 +45,5 @@
   @endforeach
   </tbody>
 </table>
-<div class="card-footer">
-  {{ $dados->links() }}
-</div>
+{{ $dados->appends(array('filtro' => $filtro))->links() }}
 @endsection

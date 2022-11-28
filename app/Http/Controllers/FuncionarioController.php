@@ -24,9 +24,9 @@ class FuncionarioController extends Controller
         //    $dados = Funcionario::all();
         //}
         //return view("funcionario.index", ['dados' => $dados]);
-        $filtro = request()->input('find');
+        $filtro = request()->input('filtro');
         $dados = Funcionario::where('nome','LIKE',$filtro.'%')->orderBy('nome')->paginate(5);
-        return view('funcionario/index')->with('dados',$dados);
+        return view('funcionario/index')->with('dados',$dados)->with('filtro',$filtro);
     }
 
     /**

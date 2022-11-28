@@ -41,7 +41,7 @@
                 <label for="tipo">Cliente</label>
                 <br>
                 <br>
-                <button class="btn btn-primary" type="submit">Entrar</button>
+                <button class="btn btn-primary" type="submit" id="entrar">Entrar</button>
             </fieldset>
         </form>
     </div>

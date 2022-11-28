@@ -8,9 +8,9 @@
   <fieldset>
     <legend>Consultar Preço/horas</legend>
     @method('GET')
-    <label for="find">Preço</label>
+    <label for="filtro">Preço</label>
     <br>
-    <input type="text" name="find" id="find">
+    <input type="text" name="filtro" id="filtro">
     <br>
     <br>
     <button class="btn btn-primary" type="submit">Consultar</button>
@@ -31,7 +31,10 @@
   @foreach ($dados as $item)
   <tr>
     <th scope="row">{{ $item->id }}</th>
-    <td>{{ $item->preco }}</td>
+    <td>
+      <?php echo "R$";?>
+      {{ $item->preco }}
+    </td>
 
     <td><a href="{{ route('preco_hora.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
     <td>
@@ -45,7 +48,5 @@
   @endforeach
   </tbody>
 </table>
-<div class="card-footer">
-  {{ $dados->links() }}
-</div>
+{{ $dados->appends(array('filtro' => $filtro))->links() }}
 @endsection

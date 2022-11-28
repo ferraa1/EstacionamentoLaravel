@@ -31,9 +31,9 @@ class ClienteController extends Controller
         $cidades = Cidade::all();
         $estados = Estado::all();
         //return view("cliente.index", ['dados' => $dados, 'cidades' => $cidades, 'estados' => $estados, 'enderecos' => $enderecos]);
-        $filtro = request()->input('find');
+        $filtro = request()->input('filtro');
         $dados = Cliente::where('nome','LIKE',$filtro.'%')->orderBy('nome')->paginate(5);
-        return view('cliente/index')->with('dados',$dados)->with('cidades',$cidades)->with('estados',$estados)->with('enderecos',$enderecos);
+        return view('cliente/index')->with('dados',$dados)->with('cidades',$cidades)->with('estados',$estados)->with('enderecos',$enderecos)->with('filtro',$filtro);
     }
 
     /**
