@@ -20,17 +20,21 @@ class OperacaoController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Operacao::where('data_entrada', 'like', "$busca%")->get();
-        } else
-            $dados = Operacao::all();
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Operacao::where('data_entrada', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Operacao::all();
+        //}
         $vagas = Vaga::all();
         $veiculos = Veiculo::all();
         $funcionarios = Funcionario::all();
         $preco_horas = Preco_hora::all();
-        return view("operacao.index", ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos, 'funcionarios' => $funcionarios, 'preco_horas' => $preco_horas]);
+        //return view("operacao.index", ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos, 'funcionarios' => $funcionarios, 'preco_horas' => $preco_horas]);
+        $filtro = request()->input('find');
+        $dados = Operacao::where('data_entrada','LIKE',$filtro.'%')->orderBy('data_entrada')->paginate(5);
+        return view('operacao/index')->with('dados',$dados)->with('vagas',$vagas)->with('veiculos',$veiculos)->with('funcionarios',$funcionarios)->with('preco_horas',$preco_horas);
     }
 
     /**
@@ -121,14 +125,18 @@ class OperacaoController extends Controller
      */
     public function destroy($id)
     {
-        if (isset($_POST['_method'])) {
-            if ($_POST['_method'] == "DELETE") {
+        //if (isset($_POST['_method'])) {
+            //if ($_POST['_method'] == "DELETE") {
+        $operacao = Operacao::find($id);
+        if ($operacao['data_saida'] != null) {
                 Operacao::destroy($id);
-            } else if ($_POST['_method'] == "SAIR") {
-                $operacao = Operacao::find($id);
+        } else {
+            //} else if ($_POST['_method'] == "PATCH") {
+                //$operacao = Operacao::find($id);
                 $dataSaida = date('Y-m-d H:i:s');
                 $operacao->update(['data_saida' => $dataSaida]);
-            }
+            //}
+        //}
         }
         return redirect()->route('operacao.index');
     }

@@ -16,14 +16,17 @@ class PrecoHoraController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Preco_hora::where('preco', 'like', "$busca%")->get();
-        } else
-            $dados = Preco_hora::all();
-
-        return view("preco_hora.index", ['dados' => $dados]);
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Preco_hora::where('preco', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Preco_hora::all();
+        //}
+        //return view("preco_hora.index", ['dados' => $dados]);
+        $filtro = request()->input('find');
+        $dados = Preco_hora::where('preco','LIKE',$filtro.'%')->orderBy('preco')->paginate(5);
+        return view('preco_hora/index')->with('dados',$dados);
     }
 
     /**

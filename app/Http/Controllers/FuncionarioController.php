@@ -16,14 +16,17 @@ class FuncionarioController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Funcionario::where('nome', 'like', "$busca%")->get();
-        } else
-            $dados = Funcionario::all();
-
-        return view("funcionario.index", ['dados' => $dados]);
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Funcionario::where('nome', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Funcionario::all();
+        //}
+        //return view("funcionario.index", ['dados' => $dados]);
+        $filtro = request()->input('find');
+        $dados = Funcionario::where('nome','LIKE',$filtro.'%')->orderBy('nome')->paginate(5);
+        return view('funcionario/index')->with('dados',$dados);
     }
 
     /**

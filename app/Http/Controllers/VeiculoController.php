@@ -16,14 +16,17 @@ class VeiculoController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Veiculo::where('placa', 'like', "$busca%")->get();
-        } else
-            $dados = Veiculo::all();
-
-        return view("veiculo.index", ['dados' => $dados]);
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Veiculo::where('placa', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Veiculo::all();
+        //}
+        //return view("veiculo.index", ['dados' => $dados]);
+        $filtro = request()->input('find');
+        $dados = Veiculo::where('placa','LIKE',$filtro.'%')->orderBy('placa')->paginate(5);
+        return view('veiculo/index')->with('dados',$dados);
     }
 
     /**

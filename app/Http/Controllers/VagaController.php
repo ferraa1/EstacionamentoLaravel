@@ -16,14 +16,18 @@ class VagaController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Vaga::where('numero', 'like', "$busca%")->get();
-        } else
-            $dados = Vaga::all();
-
-        return view("vaga.index", ['dados' => $dados]);
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Vaga::where('numero', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Vaga::all();
+        //}
+        //Vaga::paginate(5);
+        //return view("vaga.index", ['dados' => $dados]);
+        $filtro = request()->input('find');
+        $dados = Vaga::where('numero','LIKE',$filtro.'%')->orderBy('numero')->paginate(5);
+        return view('vaga/index')->with('dados',$dados);//->with('filtro',$filtro);
     }
 
     /**

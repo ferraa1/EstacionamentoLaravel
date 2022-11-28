@@ -78,11 +78,16 @@
     </td>
     <td>
       <?php
-        $entrada = strtotime($item->data_entrada);
-        $dataSaida = strtotime($item->data_saida);
-        $horas = ($dataSaida - $entrada) / 3600;
-        $total = $horas * $preco_hora;
-        echo "R$$total";
+        if ($item->data_saida != null) {
+          $entrada = strtotime($item->data_entrada);
+          $dataSaida = strtotime($item->data_saida);
+          $horas = ($dataSaida - $entrada) / 3600;
+          $total = $horas * $preco_hora;
+          $totalFormat = number_format($total,2,',','.');
+          echo "R$$totalFormat";
+        } else {
+          echo "";
+        }
       ?>
     </td>
     <?php if ($_SESSION['tipo'] == 'funcionario') { ?>
@@ -96,9 +101,9 @@
     </td>
     <td>
       <form id="form_delete" name="form_delete" action="{{ route('operacao.destroy',$item->id) }}" method="post" onsubmit="return confirm('Tem certeza que deseja encerrar este registro?')">
-        @method('SAIR')
+        @method('DELETE')
         @csrf
-        <button class="btn btn-sm btn-secondary" type="submit">Sair</button>
+        <button class="btn btn-sm btn-secondary" type="submit" <?php if ($item->data_saida != null) echo "disabled";?> >Sair</button>
       </form>
     </td>
     <?php }?>
@@ -106,4 +111,7 @@
   @endforeach
   </tbody>
 </table>
+<div class="card-footer">
+  {{ $dados->links() }}
+</div>
 @endsection

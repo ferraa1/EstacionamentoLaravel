@@ -45,37 +45,41 @@
     <td>{{ $item->usuario }}</td>
     <td>{{ $item->email }}</td>
     <td>{{ $item->telefone }}</td>
+    <td>
     @foreach ($enderecos as $endereco)
       @if ($item->id == $endereco->cliente_id)
-        <td>
-          {{ $endereco->endereco }}
-          {{ $endereco->numero }}
-          <br>
-          {{ $endereco->cep }}
-          {{ $endereco->bairro }}
-          <br>
-          {{ $endereco->complemento }}
-          <br>
-          @foreach ($cidades as $cidade)
-            @if ($cidade->id == $endereco->cidade_id)
-              {{ $cidade->descricao }}
-              @foreach ($estados as $estado)
-                @if ($estado->id == $cidade->estado_id)
-                  {{ $estado->sigla }}
-                @endif
-              @endforeach
-            @endif
-          @endforeach
-        </td>
+        <?php $itemEndereco = $endereco;?>
+        @break
       @endif
     @endforeach
+    <?php if (isset($itemEndereco)) {?>
+      {{ $endereco->endereco }}
+      {{ $endereco->numero }}
+      <br>
+      {{ $endereco->cep }}
+      {{ $endereco->bairro }}
+      <br>
+      {{ $endereco->complemento }}
+      <br>
+      @foreach ($cidades as $cidade)
+        @if ($cidade->id == $endereco->cidade_id)
+          {{ $cidade->descricao }}
+          @foreach ($estados as $estado)
+            @if ($estado->id == $cidade->estado_id)
+              {{ $estado->sigla }}
+            @endif
+          @endforeach
+        @endif
+      @endforeach
+    <?php unset($itemEndereco);} else {echo "";}?>
+    </td>
     <td>{{ $item->ativado }}</td>
     <td>
       @foreach ($item->veiculos as $veiculo)
         {{ $veiculo->placa }}<br>
       @endforeach
     </td>
-
+    
     <td><a href="{{ route('cliente.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
     <td>
       <form id="form_delete" name="form_delete" action="{{ route('cliente.destroy',$item->id) }}" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este registro?')">
@@ -92,4 +96,7 @@
   @endforeach
   </tbody>
 </table>
+<div class="card-footer">
+  {{ $dados->links() }}
+</div>
 @endsection

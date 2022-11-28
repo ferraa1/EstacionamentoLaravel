@@ -20,17 +20,20 @@ class ClienteController extends Controller
     {
         if (!isset($_SESSION))
             session_start();
-        $dados = array();
-        if (request('find') != null) {
-            $busca = request('find');
-            $dados = Cliente::where('nome', 'like', "$busca%")->get();
-
-        } else
-            $dados = Cliente::all();
+        //$dados = array();
+        //if (request('find') != null) {
+        //    $busca = request('find');
+        //    $dados = Cliente::where('nome', 'like', "$busca%")->get();
+        //} else {
+        //    $dados = Cliente::all();
+        //}
         $enderecos = Endereco::all();
         $cidades = Cidade::all();
         $estados = Estado::all();
-        return view("cliente.index", ['dados' => $dados, 'cidades' => $cidades, 'estados' => $estados, 'enderecos' => $enderecos]);
+        //return view("cliente.index", ['dados' => $dados, 'cidades' => $cidades, 'estados' => $estados, 'enderecos' => $enderecos]);
+        $filtro = request()->input('find');
+        $dados = Cliente::where('nome','LIKE',$filtro.'%')->orderBy('nome')->paginate(5);
+        return view('cliente/index')->with('dados',$dados)->with('cidades',$cidades)->with('estados',$estados)->with('enderecos',$enderecos);
     }
 
     /**
