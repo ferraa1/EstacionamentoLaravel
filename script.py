@@ -10,10 +10,14 @@ import time
 
 #firefox
 options = Options()
-options.binary_location = r"C:/Program Files/Mozilla Firefox/firefox.exe"
+#only on windows:
+#options.binary_location = r"C:/Program Files/Mozilla Firefox/firefox.exe"
 
 #geckodriver
-driver = webdriver.Firefox(options=options, executable_path="C:/geckodriver/geckodriver.exe")
+#if on windows:
+#driver = webdriver.Firefox(options=options, executable_path="C:/geckodriver/geckodriver.exe")
+#else:
+driver = webdriver.Firefox(options=options)
 
 #url
 driver.get("http://127.0.0.1:8000")

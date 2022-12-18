@@ -1,3 +1,3 @@
 nome,usuario,senha,email,telefone,endereco,numero,cep,bairro,complemento,cidade,estado,veiculo
-SeleniumC One,scone,123,scone@email.com,(00)111111111,Rua Exemplo,1,11111-000,Downtown,Apt. 1,sunt beatae,VR,111AAA
-SeleniumC Two,sctwo,123,sctwo@email.com,(00)222222222,Rua Exemplo,2,22222-000,Downtown,Apt. 2,sunt beatae,VR,222BBB
+SeleniumC One,scone,123,scone@email.com,(00)111111111,Rua Exemplo,1,11111-000,Downtown,Apt. 1,ab non,VR,111AAA
+SeleniumC Two,sctwo,123,sctwo@email.com,(00)222222222,Rua Exemplo,2,22222-000,Downtown,Apt. 2,ab non,VR,222BBB

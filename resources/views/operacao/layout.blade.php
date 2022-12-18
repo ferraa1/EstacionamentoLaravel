@@ -10,6 +10,7 @@
 <body>
     <div class="container text-center my-5 p-5 rounded shadow-lg">
         <h1>@yield('titulo')</h1>
+        @component('operacao.menu')@endcomponent
         @yield('conteudo')
         @component('operacao.nav')@endcomponent
     </div>
