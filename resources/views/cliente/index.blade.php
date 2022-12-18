@@ -26,7 +26,7 @@
       <th scope="col">EMAIL</th>
       <th scope="col">TELEFONE</th>
       <th scope="col">ENDEREÇO</th>
-      <th scope="col">ATIVADO</th>
+      <!--<th scope="col">ATIVADO</th>-->
       <th scope="col">VEÍCULOS</th>
 
       <th scope="col">EDITAR</th>
@@ -73,13 +73,13 @@
       @endforeach
     <?php unset($itemEndereco);} else {echo "";}?>
     </td>
-    <td>{{ $item->ativado }}</td>
+    <!--<td>{{ $item->ativado }}</td>-->
     <td>
       @foreach ($item->veiculos as $veiculo)
         {{ $veiculo->placa }}<br>
       @endforeach
     </td>
-    
+
     <td><a href="{{ route('cliente.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
     <td>
       <form id="form_delete" name="form_delete" action="{{ route('cliente.destroy',$item->id) }}" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este registro?')">

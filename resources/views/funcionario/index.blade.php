@@ -24,7 +24,7 @@
       <th scope="col">NOME</th>
       <th scope="col">USUÁRIO</th>
       <th scope="col">ADMIN</th>
-      <th scope="col">ATIVADO</th>
+      <!--<th scope="col">ATIVADO</th>-->
 
       <th scope="col">EDITAR</th>
       <th scope="col">EXCLUIR</th>
@@ -37,7 +37,7 @@
     <td>{{ $item->nome }}</td>
     <td>{{ $item->usuario }}</td>
     <td>{{ $item->admin }}</td>
-    <td>{{ $item->ativado }}</td>
+    <!--<td>{{ $item->ativado }}</td>-->
 
     <td><a href="{{ route('funcionario.edit',$item->id) }}"><button class="btn btn-sm btn-secondary">Editar</button></a></td>
     <td>
