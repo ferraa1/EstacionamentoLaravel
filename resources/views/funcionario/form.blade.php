@@ -21,9 +21,9 @@ if ($_SESSION['admin'] == 1) {
 ?>
     <label for="admin">Admin</label>
     <br>
-    <input type="radio" name="admin" id="admin" value="@if (isset($dados->admin)) {{ $dados->admin }} @else {{ 0 }} @endif" checked>
+    <input type="radio" name="admin" id="admin" value="0" checked>
     <label for="admin">Funcionário</label>
-    <input type="radio" name="admin" id="admin" value="@if (isset($dados->admin)) {{ $dados->admin }} @else {{ 1 }} @endif">
+    <input type="radio" name="admin" id="admin" value="1">
     <label for="admin">Administrador</label>
     <br>
 <?php
