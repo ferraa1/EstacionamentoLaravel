@@ -17,7 +17,7 @@ class Preco_horaFactory extends Factory
     public function definition()
     {
         return [
-            "preco" => $this->faker->regexify('[1-9]{2}')
+            'preco' => $this->faker->regexify('[1-9]{2}'),
         ];
     }
 }

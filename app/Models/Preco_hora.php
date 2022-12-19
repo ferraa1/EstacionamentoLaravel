@@ -11,7 +11,8 @@ class Preco_hora extends Model
 
     protected $fillable = ['preco'];
 
-    public function operacoes() {
+    public function operacoes()
+    {
         return $this->hasMany('App\Models\Operacao');
     }
 }

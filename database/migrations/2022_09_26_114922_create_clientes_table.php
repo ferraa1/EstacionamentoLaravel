@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
-            $table->string('nome',45);
-            $table->string('usuario',45);
-            $table->string('senha',45);
-            $table->string('email',45);
-            $table->string('telefone',45);
+            $table->string('nome', 45);
+            $table->string('usuario', 45);
+            $table->string('senha', 45);
+            $table->string('email', 45);
+            $table->string('telefone', 45);
             $table->boolean('ativado');
             $table->timestamps();
         });

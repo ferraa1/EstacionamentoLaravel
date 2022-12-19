@@ -14,8 +14,9 @@ class VagaController extends Controller
      */
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         //$dados = array();
         //if (request('find') != null) {
         //    $busca = request('find');
@@ -26,8 +27,9 @@ class VagaController extends Controller
         //Vaga::paginate(5);
         //return view("vaga.index", ['dados' => $dados]);
         $filtro = request()->input('filtro');
-        $dados = Vaga::where('numero','LIKE',$filtro.'%')->orderBy('numero')->paginate(5);
-        return view('vaga/index')->with('dados',$dados)->with('filtro',$filtro);
+        $dados = Vaga::where('numero', 'LIKE', $filtro.'%')->orderBy('numero')->paginate(5);
+
+        return view('vaga/index')->with('dados', $dados)->with('filtro', $filtro);
     }
 
     /**
@@ -49,6 +51,7 @@ class VagaController extends Controller
     public function store(Request $request)
     {
         Vaga::create($request->all());
+
         return redirect()->route('vaga.index');
     }
 
@@ -60,7 +63,6 @@ class VagaController extends Controller
      */
     public function show(Vaga $vaga)
     {
-        
     }
 
     /**
@@ -72,7 +74,8 @@ class VagaController extends Controller
     public function edit($id)
     {
         $dados = Vaga::find($id);
-        return view("vaga.edit", ['dados' => $dados]);
+
+        return view('vaga.edit', ['dados' => $dados]);
     }
 
     /**
@@ -85,6 +88,7 @@ class VagaController extends Controller
     public function update(Request $request, $id)
     {
         Vaga::find($id)->update($request->all());
+
         return redirect()->route('vaga.index');
     }
 

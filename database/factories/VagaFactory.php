@@ -17,7 +17,7 @@ class VagaFactory extends Factory
     public function definition()
     {
         return [
-            "numero" => $this->faker->regexify('[0-9]{3}')
+            'numero' => $this->faker->regexify('[0-9]{3}'),
         ];
     }
 }

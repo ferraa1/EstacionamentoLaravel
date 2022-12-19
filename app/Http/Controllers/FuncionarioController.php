@@ -14,8 +14,9 @@ class FuncionarioController extends Controller
      */
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         //$dados = array();
         //if (request('find') != null) {
         //    $busca = request('find');
@@ -25,8 +26,9 @@ class FuncionarioController extends Controller
         //}
         //return view("funcionario.index", ['dados' => $dados]);
         $filtro = request()->input('filtro');
-        $dados = Funcionario::where('nome','LIKE',$filtro.'%')->orderBy('nome')->paginate(5);
-        return view('funcionario/index')->with('dados',$dados)->with('filtro',$filtro);
+        $dados = Funcionario::where('nome', 'LIKE', $filtro.'%')->orderBy('nome')->paginate(5);
+
+        return view('funcionario/index')->with('dados', $dados)->with('filtro', $filtro);
     }
 
     /**
@@ -49,9 +51,11 @@ class FuncionarioController extends Controller
     {
         $request['senha'] = sha1($request['senha']);
         $request['ativado'] = 1;
-        if (!isset($request['admin']))
+        if (! isset($request['admin'])) {
             $request['admin'] = 0;
+        }
         Funcionario::create($request->all());
+
         return redirect()->route('funcionario.index');
     }
 
@@ -75,7 +79,8 @@ class FuncionarioController extends Controller
     public function edit($id)
     {
         $dados = Funcionario::find($id);
-        return view("funcionario.edit", ['dados' => $dados]);
+
+        return view('funcionario.edit', ['dados' => $dados]);
     }
 
     /**
@@ -88,11 +93,12 @@ class FuncionarioController extends Controller
     public function update(Request $request, $id)
     {
         $request['senha'] = sha1($request['senha']);
-        if (!isset($request['admin'])) {
+        if (! isset($request['admin'])) {
             $target = Funcionario::find($id);
             $request['admin'] = $target['admin'];
         }
         Funcionario::find($id)->update($request->all());
+
         return redirect()->route('funcionario.index');
     }
 
@@ -105,6 +111,7 @@ class FuncionarioController extends Controller
     public function destroy($id)
     {
         Funcionario::destroy($id);
+
         return redirect()->route('funcionario.index');
     }
 }

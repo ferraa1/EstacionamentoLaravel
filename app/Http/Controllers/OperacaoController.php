@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Funcionario;
 use App\Models\Operacao;
-use Illuminate\Http\Request;
+use App\Models\Preco_hora;
 use App\Models\Vaga;
 use App\Models\Veiculo;
-use App\Models\Funcionario;
-use App\Models\Preco_hora;
+use Illuminate\Http\Request;
 
 class OperacaoController extends Controller
 {
@@ -18,8 +18,9 @@ class OperacaoController extends Controller
      */
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         //$dados = array();
         //if (request('find') != null) {
         //    $busca = request('find');
@@ -33,8 +34,9 @@ class OperacaoController extends Controller
         $preco_horas = Preco_hora::all();
         //return view("operacao.index", ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos, 'funcionarios' => $funcionarios, 'preco_horas' => $preco_horas]);
         $filtro = request()->input('filtro');
-        $dados = Operacao::where('data_entrada','LIKE',$filtro.'%')->orderBy('data_entrada', 'desc')->paginate(5);
-        return view('operacao/index')->with('dados',$dados)->with('vagas',$vagas)->with('veiculos',$veiculos)->with('funcionarios',$funcionarios)->with('preco_horas',$preco_horas)->with('filtro',$filtro);
+        $dados = Operacao::where('data_entrada', 'LIKE', $filtro.'%')->orderBy('data_entrada', 'desc')->paginate(5);
+
+        return view('operacao/index')->with('dados', $dados)->with('vagas', $vagas)->with('veiculos', $veiculos)->with('funcionarios', $funcionarios)->with('preco_horas', $preco_horas)->with('filtro', $filtro);
     }
 
     /**
@@ -48,6 +50,7 @@ class OperacaoController extends Controller
         $vagas = Vaga::whereNotIn('id', $operacao)->get();
         $operacao = Operacao::select('veiculo_id')->where('data_saida', 'is null')->get();
         $veiculos = Veiculo::whereNotIn('id', $operacao)->get();
+
         return view('operacao.create', ['vagas' => $vagas, 'veiculos' => $veiculos]);
     }
 
@@ -59,14 +62,16 @@ class OperacaoController extends Controller
      */
     public function store(Request $request)
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         $request['data_entrada'] = date('Y-m-d H:i:s');
         $request['data_saida'] = null;
         $request['funcionario_id'] = $_SESSION['id'];
         $preco_hora = Preco_hora::orderBy('id', 'desc')->first();
         $request['preco_hora_id'] = $preco_hora->id;
         Operacao::create($request->all());
+
         return redirect()->route('operacao.index');
     }
 
@@ -78,7 +83,6 @@ class OperacaoController extends Controller
      */
     public function show(Operacao $operacao)
     {
-        
     }
 
     /**
@@ -89,14 +93,16 @@ class OperacaoController extends Controller
      */
     public function edit($id)
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         $dados = Operacao::find($id);
         $operacao = Operacao::select('vaga_id')->where('data_saida', 'is null')->get();
         $vagas = Vaga::whereNotIn('id', $operacao)->get();
         $operacao = Operacao::select('veiculo_id')->where('data_saida', 'is null')->get();
         $veiculos = Veiculo::whereNotIn('id', $operacao)->get();
-        return view("operacao.edit", ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos]);
+
+        return view('operacao.edit', ['dados' => $dados, 'vagas' => $vagas, 'veiculos' => $veiculos]);
     }
 
     /**
@@ -108,12 +114,14 @@ class OperacaoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         $request['funcionario_id'] = $_SESSION['id'];
         $preco_hora = Preco_hora::orderBy('id', 'desc')->first();
         $request['preco_hora_id'] = $preco_hora->id;
         Operacao::find($id)->update($request->all());
+
         return redirect()->route('operacao.index');
     }
 
@@ -126,18 +134,19 @@ class OperacaoController extends Controller
     public function destroy($id)
     {
         //if (isset($_POST['_method'])) {
-            //if ($_POST['_method'] == "DELETE") {
+        //if ($_POST['_method'] == "DELETE") {
         $operacao = Operacao::find($id);
         if ($operacao['data_saida'] != null) {
-                Operacao::destroy($id);
+            Operacao::destroy($id);
         } else {
             //} else if ($_POST['_method'] == "PATCH") {
-                //$operacao = Operacao::find($id);
-                $dataSaida = date('Y-m-d H:i:s');
-                $operacao->update(['data_saida' => $dataSaida]);
+            //$operacao = Operacao::find($id);
+            $dataSaida = date('Y-m-d H:i:s');
+            $operacao->update(['data_saida' => $dataSaida]);
             //}
-        //}
+            //}
         }
+
         return redirect()->route('operacao.index');
     }
 /*

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('vagas', function (Blueprint $table) {
             $table->id();
-            $table->string('numero','10');
+            $table->string('numero', '10');
             $table->timestamps();
         });
     }

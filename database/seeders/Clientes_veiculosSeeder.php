@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
 use App\Models\Clientes_veiculos;
+use Illuminate\Database\Seeder;
 
 class Clientes_veiculosSeeder extends Seeder
 {

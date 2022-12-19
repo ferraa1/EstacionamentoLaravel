@@ -8,19 +8,21 @@ use Illuminate\Http\Request;
 
 class UiController extends Controller
 {
-
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
+
         return view('ui.index');
     }
 
     public function store(Request $request)
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
-        if($request['tipo'] == 'funcionario') {
+        }
+        if ($request['tipo'] == 'funcionario') {
             foreach (Funcionario::all() as $dados) {
                 if ($dados['usuario'] == $request['usuario']) {
                     if ($dados['senha'] == sha1($request['senha'])) {
@@ -30,6 +32,7 @@ class UiController extends Controller
                             $_SESSION['nome'] = $dados['nome'];
                             $_SESSION['admin'] = $dados['admin'];
                             $_SESSION['tentativas'] = 0;
+
                             return view('ui.menu');
                         } else {
                             return view('ui.index');
@@ -48,6 +51,7 @@ class UiController extends Controller
                             $_SESSION['tipo'] = 'cliente';
                             $_SESSION['nome'] = $dados['nome'];
                             $_SESSION['tentativas'] = 0;
+
                             return view('ui.menu');
                         } else {
                             return view('ui.index');
@@ -58,14 +62,17 @@ class UiController extends Controller
                 }
             }
         }
+
         return view('ui.index');
     }
 
     public function destroy($id)
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         session_destroy();
+
         return view('ui.index');
     }
 }

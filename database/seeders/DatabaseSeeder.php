@@ -23,14 +23,14 @@ class DatabaseSeeder extends Seeder
         $this->call([
             EstadoSeeder::class,
             CidadeSeeder::class,
-			ClienteSeeder::class,
-			EnderecoSeeder::class,
-			VagaSeeder::class,
-			Preco_horaSeeder::class,
-			FuncionarioSeeder::class,
-			VeiculoSeeder::class,
-			OperacaoSeeder::class,
-			Clientes_veiculosSeeder::class
+            ClienteSeeder::class,
+            EnderecoSeeder::class,
+            VagaSeeder::class,
+            Preco_horaSeeder::class,
+            FuncionarioSeeder::class,
+            VeiculoSeeder::class,
+            OperacaoSeeder::class,
+            Clientes_veiculosSeeder::class,
         ]);
     }
 }

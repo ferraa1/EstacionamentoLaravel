@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Estado;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Cidade>
@@ -18,8 +18,8 @@ class CidadeFactory extends Factory
     public function definition()
     {
         return [
-            "descricao" => $this->faker->words(2,true),
-            "estado_id" => $this->faker->randomElement(Estado::pluck('id'))
+            'descricao' => $this->faker->words(2, true),
+            'estado_id' => $this->faker->randomElement(Estado::pluck('id')),
         ];
     }
 }

@@ -17,11 +17,11 @@ class FuncionarioFactory extends Factory
     public function definition()
     {
         return [
-            "nome" => $this->faker->words(2,true),
-            "usuario" => $this->faker->words(1,true),
-            "senha" => "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
-            "admin" => $this->faker->regexify('[0-1]{1}'),
-            "ativado" => 1
+            'nome' => $this->faker->words(2, true),
+            'usuario' => $this->faker->words(1, true),
+            'senha' => '40bd001563085fc35165329ea1ff5c5ecbdbbeef',
+            'admin' => $this->faker->regexify('[0-1]{1}'),
+            'ativado' => 1,
         ];
     }
 }

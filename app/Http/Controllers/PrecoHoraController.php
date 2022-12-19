@@ -14,8 +14,9 @@ class PrecoHoraController extends Controller
      */
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         //$dados = array();
         //if (request('find') != null) {
         //    $busca = request('find');
@@ -25,8 +26,9 @@ class PrecoHoraController extends Controller
         //}
         //return view("preco_hora.index", ['dados' => $dados]);
         $filtro = request()->input('filtro');
-        $dados = Preco_hora::where('preco','LIKE',$filtro.'%')->orderBy('id', 'desc')->paginate(5);
-        return view('preco_hora/index')->with('dados',$dados)->with('filtro',$filtro);
+        $dados = Preco_hora::where('preco', 'LIKE', $filtro.'%')->orderBy('id', 'desc')->paginate(5);
+
+        return view('preco_hora/index')->with('dados', $dados)->with('filtro', $filtro);
     }
 
     /**
@@ -48,6 +50,7 @@ class PrecoHoraController extends Controller
     public function store(Request $request)
     {
         Preco_hora::create($request->all());
+
         return redirect()->route('preco_hora.index');
     }
 
@@ -71,7 +74,8 @@ class PrecoHoraController extends Controller
     public function edit($id)
     {
         $dados = Preco_hora::find($id);
-        return view("preco_hora.edit", ['dados' => $dados]);
+
+        return view('preco_hora.edit', ['dados' => $dados]);
     }
 
     /**
@@ -84,6 +88,7 @@ class PrecoHoraController extends Controller
     public function update(Request $request, $id)
     {
         Preco_hora::find($id)->update($request->all());
+
         return redirect()->route('preco_hora.index');
     }
 
@@ -96,6 +101,7 @@ class PrecoHoraController extends Controller
     public function destroy($id)
     {
         Preco_hora::destroy($id);
+
         return redirect()->route('preco_hora.index');
     }
 }

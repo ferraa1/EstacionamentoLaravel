@@ -17,8 +17,8 @@ class EstadoFactory extends Factory
     public function definition()
     {
         return [
-            "descricao" => $this->faker->words(2,true),
-            "sigla" => $this->faker->regexify('[A-Z]{2}')
+            'descricao' => $this->faker->words(2, true),
+            'sigla' => $this->faker->regexify('[A-Z]{2}'),
         ];
     }
 }

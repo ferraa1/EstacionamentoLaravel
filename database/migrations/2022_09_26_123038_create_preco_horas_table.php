@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('preco_horas', function (Blueprint $table) {
             $table->id();
-            $table->double("preco");
+            $table->double('preco');
             $table->timestamps();
         });
     }

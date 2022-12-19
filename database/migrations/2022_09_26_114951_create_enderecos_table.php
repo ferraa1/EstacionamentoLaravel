@@ -17,11 +17,11 @@ return new class extends Migration
             $table->unsignedBigInteger('cliente_id');
             $table->foreign('cliente_id')->references('id')->on('clientes');
             $table->primary('cliente_id');
-            $table->string('endereco',100);
-            $table->string('numero',10)->nullable();
-            $table->string('cep',10);
-            $table->string('bairro',45);
-            $table->string('complemento',100)->nullable();
+            $table->string('endereco', 100);
+            $table->string('numero', 10)->nullable();
+            $table->string('cep', 10);
+            $table->string('bairro', 45);
+            $table->string('complemento', 100)->nullable();
             $table->timestamps();
             $table->unsignedBigInteger('cidade_id');
             $table->foreign('cidade_id')->references('id')->on('cidades');

@@ -11,7 +11,8 @@ class Vaga extends Model
 
     protected $fillable = ['numero'];
 
-    public function operacoes() {
+    public function operacoes()
+    {
         return $this->hasMany('App\Models\Operacao');
     }
 }

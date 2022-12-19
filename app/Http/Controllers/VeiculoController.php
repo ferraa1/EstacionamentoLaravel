@@ -14,8 +14,9 @@ class VeiculoController extends Controller
      */
     public function index()
     {
-        if (!isset($_SESSION))
+        if (! isset($_SESSION)) {
             session_start();
+        }
         //$dados = array();
         //if (request('find') != null) {
         //    $busca = request('find');
@@ -25,8 +26,9 @@ class VeiculoController extends Controller
         //}
         //return view("veiculo.index", ['dados' => $dados]);
         $filtro = request()->input('filtro');
-        $dados = Veiculo::where('placa','LIKE',$filtro.'%')->orderBy('placa')->paginate(5);
-        return view('veiculo/index')->with('dados',$dados)->with('filtro',$filtro);
+        $dados = Veiculo::where('placa', 'LIKE', $filtro.'%')->orderBy('placa')->paginate(5);
+
+        return view('veiculo/index')->with('dados', $dados)->with('filtro', $filtro);
     }
 
     /**
@@ -48,6 +50,7 @@ class VeiculoController extends Controller
     public function store(Request $request)
     {
         Veiculo::create($request->all());
+
         return redirect()->route('veiculo.index');
     }
 
@@ -59,7 +62,6 @@ class VeiculoController extends Controller
      */
     public function show(Veiculo $veiculo)
     {
-        
     }
 
     /**
@@ -71,7 +73,8 @@ class VeiculoController extends Controller
     public function edit($id)
     {
         $dados = Veiculo::find($id);
-        return view("veiculo.edit", ['dados' => $dados]);
+
+        return view('veiculo.edit', ['dados' => $dados]);
     }
 
     /**
@@ -84,6 +87,7 @@ class VeiculoController extends Controller
     public function update(Request $request, $id)
     {
         Veiculo::find($id)->update($request->all());
+
         return redirect()->route('veiculo.index');
     }
 
@@ -96,6 +100,7 @@ class VeiculoController extends Controller
     public function destroy($id)
     {
         Veiculo::destroy($id);
+
         return redirect()->route('veiculo.index');
     }
 }

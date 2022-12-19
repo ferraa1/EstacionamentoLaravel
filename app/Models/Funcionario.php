@@ -9,9 +9,10 @@ class Funcionario extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome','usuario','senha','admin','ativado'];
+    protected $fillable = ['nome', 'usuario', 'senha', 'admin', 'ativado'];
 
-    public function operacoes() {
+    public function operacoes()
+    {
         return $this->hasMany('App\Models\Operacao');
     }
 }

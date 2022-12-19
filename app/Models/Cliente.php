@@ -9,14 +9,16 @@ class Cliente extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome','usuario','senha','email','telefone','ativado'];
+    protected $fillable = ['nome', 'usuario', 'senha', 'email', 'telefone', 'ativado'];
 
-    public function endereco() {
+    public function endereco()
+    {
         return $this->hasOne('App\Models\Endereco');
     }
 
-    public function veiculos() {
-    	return $this->belongsToMany('App\Models\Veiculo','clientes_veiculos','cliente_id','veiculo_id')->withTimestamps();
+    public function veiculos()
+    {
+        return $this->belongsToMany('App\Models\Veiculo', 'clientes_veiculos', 'cliente_id', 'veiculo_id')->withTimestamps();
     }
 }
 //https://laravel.com/docs/9.x/eloquent-relationships#many-to-many

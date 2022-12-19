@@ -2,9 +2,9 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Cliente;
 use App\Models\Veiculo;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
@@ -19,8 +19,8 @@ class Clientes_veiculosFactory extends Factory
     public function definition()
     {
         return [
-            "cliente_id" => $this->faker->randomElement(Cliente::pluck('id')),
-            "veiculo_id" => $this->faker->randomElement(Veiculo::pluck('id'))
+            'cliente_id' => $this->faker->randomElement(Cliente::pluck('id')),
+            'veiculo_id' => $this->faker->randomElement(Veiculo::pluck('id')),
         ];
     }
 }

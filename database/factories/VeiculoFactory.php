@@ -17,7 +17,7 @@ class VeiculoFactory extends Factory
     public function definition()
     {
         return [
-            "placa" => $this->faker->regexify('[A-Z]{6}')
+            'placa' => $this->faker->regexify('[A-Z]{6}'),
         ];
     }
 }

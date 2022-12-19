@@ -9,13 +9,15 @@ class Cidade extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['descricao','estado_id'];
+    protected $fillable = ['descricao', 'estado_id'];
 
-    public function estado() {
+    public function estado()
+    {
         return $this->belongsTo('App\Models\Estado');
     }
 
-    public function enderecos() {
+    public function enderecos()
+    {
         return $this->hasMany('App\Models\Endereco');
     }
 }

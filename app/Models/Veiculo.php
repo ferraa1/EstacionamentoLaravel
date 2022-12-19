@@ -11,12 +11,14 @@ class Veiculo extends Model
 
     protected $fillable = ['placa'];
 
-    public function operacoes() {
+    public function operacoes()
+    {
         return $this->hasMany('App\Models\Operacao');
     }
 
-    public function clientes() {
-    	return $this->belongsToMany('App\Models\Cliente','clientes_veiculos','veiculo_id','cliente_id')->withTimestamps();
+    public function clientes()
+    {
+        return $this->belongsToMany('App\Models\Cliente', 'clientes_veiculos', 'veiculo_id', 'cliente_id')->withTimestamps();
     }
 }
 //https://laravel.com/docs/9.x/eloquent-relationships#many-to-many
